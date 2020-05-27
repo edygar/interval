@@ -6,7 +6,7 @@
  * ## Installation:
  *
  * ```sh
- * deno install -f --allow-run -n interval https://raw.githubusercontent.com/edygar/readme.ts
+ * deno install -f --allow-run -n interval https://raw.githubusercontent.com/edygar/interval/mod.ts
  * ```
  *
  * ## Usage
