@@ -5,7 +5,7 @@ Quick deno helper to call given command each given time.
 ## Installation:
 
 ```sh
-deno install -f --allow-run -n interval https://raw.githubusercontent.com/edygar/interval/mod.ts
+deno install -f --allow-run -n interval https://raw.githubusercontent.com/edygar/interval/master/mod.ts
 ```
 
 ## Usage
