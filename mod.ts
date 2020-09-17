@@ -1,11 +1,11 @@
-const args = Array.from(Deno.args)
+const args = Array.from(Deno.args);
 if (args.length < 2) throw new Error("No command was provided");
 
 const time = parseTime(args.shift() ?? "");
 const cmd = args.map(String);
 
 for await (let _ of interval(time)) {
-  await Deno.run({ cmd });
+  Deno.run({ cmd });
 }
 
 /**
@@ -15,7 +15,7 @@ for await (let _ of interval(time)) {
  */
 async function* interval(time: number) {
   do {
-    yield await new Promise(resolve => setTimeout(resolve, time));
+    yield await new Promise((resolve) => setTimeout(resolve, time));
   } while (true);
 }
 
